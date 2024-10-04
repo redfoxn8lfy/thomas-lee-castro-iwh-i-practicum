@@ -37,7 +37,7 @@ html
       }
       input[type="text"] {
         width: 100%;
-        padding: 8px;
+        padding: 10px;
         margin-bottom: 15px;
         border-radius: 5px;
         border: 1px solid #ccc;
@@ -45,21 +45,21 @@ html
       }
       button[type="submit"] {
         width: 100%;
-        background-color: #4CAF50;
+        background-color: #2986cc;
         color: white;
         padding: 10px;
         border: none;
-        border-radius: 5px;
+        border-radius: 10px;
         cursor: pointer;
       }
       button[type="submit"]:hover {
-        background-color: #45a049;
+        background-color: #3d85c6;
       }
       a {
         display: block;
         text-align: center;
         margin-top: 20px;
-        color: #4CAF50;
+        color: #2986cc;
         text-decoration: none;
       }
   body
@@ -67,7 +67,7 @@ html
       h1 New Establishment Addition Form
       div.form-container
         form(action="/update-establishments" method="post")
-          label(for="name") Name
+          label(for="name") Establishment Name
           input(type="text" name="name")
           label(for="address") Address
           input(type="text" name="address")
@@ -77,5 +77,5 @@ html
           input(type="text" name="email_address")
           label(for="establishment_type") Establishment Type
           input(type="text" name="establishment_type")
-          button(type="submit") Add New Establishments
+          button(type="submit") Add New Establishment
         a(href="/homepage-establishments") Return to the homepage

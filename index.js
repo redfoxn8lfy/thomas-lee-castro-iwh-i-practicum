@@ -9,6 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.set('views', path.join(__dirname, 'views'));
 
+const private_app_token = ''
 
 app.get('/homepage-establishments', async (req, res) => {
     const establishmentsEndpoint = 'https://api.hubspot.com/crm/v3/objects/establishments?properties=name,address,contact_person,email_address,establishment_type';
